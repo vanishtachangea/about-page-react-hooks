@@ -1,5 +1,5 @@
 import React from "react";
-import CardList from "./cardlist.component";
+import CardList from "../cardlist/cardlist.component";
 const About = (props) => {
   const numberCards = 12;
   return (

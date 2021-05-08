@@ -1,20 +1,17 @@
 import React from "react";
-import "../index.css";
+
+import { CardContainer, ImageContainer } from "./card.styles.js";
 const Card = (props) => {
   console.log("props in card: ", props);
   const { user } = props;
 
   return (
-    <div className="card shadow p-3 mb-5 bg-pink rounded">
+    <CardContainer>
       <p>
         {user.name.first} {user.name.last}
       </p>
-      <img
-        className="aboutImage"
-        src={user.picture.medium}
-        alt={user.name.last}
-      />
-    </div>
+      <ImageContainer src={user.picture.medium} alt={user.name.last} />
+    </CardContainer>
   );
 };
 export default Card;

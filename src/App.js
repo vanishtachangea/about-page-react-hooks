@@ -1,5 +1,4 @@
-import About from "./components/about.component";
-import "./App.css";
+import About from "./components/about/about.component";
 
 function App() {
   return (

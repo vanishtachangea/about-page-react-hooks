@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Card from "../components/card.component";
+import Card from "../card/card.component";
+import { CardListContainer } from "./cardlist.styles";
+
 const CardList = (props) => {
   console.log("props in Cardlist", props);
   const [users, setUsers] = useState(null);
@@ -14,11 +16,11 @@ const CardList = (props) => {
     fetchFunction();
   }, [props.numberCards]);
   return (
-    <div className="cardList">
+    <CardListContainer>
       {users?.map((u) => (
         <Card user={u} />
       ))}
-    </div>
+    </CardListContainer>
   );
 };
 export default CardList;

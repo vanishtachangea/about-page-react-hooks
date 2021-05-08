@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
@@ -12,17 +13,18 @@ code {
     monospace;
 }
 
-.aboutImage {
+/* .aboutImage {
   border-radius: 100%;
-}
+} */
 
-.card {
+/* .card-container {
   display: flex;
   flex-direction: column;
   background-color: pink;
-  box-shadow: palevioletred;
-
-  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px rgb(116, 114, 115);
+  border: 1px solid rgb(214, 115, 166);
+  border-style: groove;
+  border-radius: 15px;
   padding: 25px;
   cursor: pointer;
   -moz-osx-font-smoothing: grayscale;
@@ -32,7 +34,7 @@ code {
   font-weight: bold;
 }
 
-.card:hover {
+.card-container:hover {
   transform: scale(1.05);
 }
 
@@ -42,4 +44,4 @@ code {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-}
+} */
